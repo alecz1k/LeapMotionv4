@@ -28,13 +28,14 @@ namespace Leap.Unity.Examples {
     }
 
     public void DecreaseSpeed()
-    {
-         _targetSpeed -= 5F;
+     {
+      _targetSpeed -= 5F;
      }
 
-        public void IncreaseTorque() {
+     public void IncreaseTorque() 
+     {
       _targetTorque += 36f * Vector3.one;
-    }
+      }
 
     public void Stop() {
       _targetSpeed = 0F;

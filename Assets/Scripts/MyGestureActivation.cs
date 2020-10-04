@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
-
+using UnityStandardAssets.ImageEffects;
 
 public class MyGestureActivation : MonoBehaviour
 {
@@ -12,11 +12,15 @@ public class MyGestureActivation : MonoBehaviour
     public GameObject prefab;
     public bool gestureIsOn;
     public PostProcessVolume volume;
-    private Bloom bloom;
+    private UnityEngine.Rendering.PostProcessing.Bloom bloom;
     private Vignette vignette;
     private ChromaticAberration chromatic;
     private ColorGrading colorGrading;
-    private DepthOfField depth;
+    private UnityEngine.Rendering.PostProcessing.DepthOfField depth;
+
+    private UnityStandardAssets.ImageEffects.Bloom legacyBloom;
+    private CreaseShading creaseShading;
+    private EdgeDetection edgeDetection;
 
     void Start()
     {
