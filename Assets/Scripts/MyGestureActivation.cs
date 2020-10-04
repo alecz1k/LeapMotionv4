@@ -31,7 +31,7 @@ public class MyGestureActivation : MonoBehaviour
         vignette.intensity.value = 0;
         chromatic.intensity.value = 0;
         colorGrading.saturation.value = 1;
-        depth.focusDistance.value = 1;
+        depth.focusDistance.value = 3;
 
     }
 
