@@ -48,7 +48,7 @@ public class MyGestureActivation : MonoBehaviour
             prefab.SetActive(true);
             bloom.intensity.value = Mathf.Lerp(bloom.intensity.value, 50, .075f * Time.deltaTime);
             colorGrading.saturation.value = Mathf.Lerp(colorGrading.saturation.value, 100, .075f * Time.deltaTime);
-            depth.focusDistance.value = Mathf.Lerp(depth.focusDistance.value, 5, .05f * Time.deltaTime);
+            depth.focusDistance.value = Mathf.Lerp(depth.focusDistance.value, 5, .025f * Time.deltaTime);
             vignette.intensity.value = Mathf.Lerp(vignette.intensity.value, 1, .05f * Time.deltaTime);
             chromatic.intensity.value = Mathf.Lerp(chromatic.intensity.value, 1, .05f * Time.deltaTime);
             Debug.Log("Indexes and Thumbs Are Touching, We are Gesture Ready");
@@ -62,7 +62,7 @@ public class MyGestureActivation : MonoBehaviour
             gestureIsOn = false;
             bloom.intensity.value = Mathf.Lerp(bloom.intensity.value, 1, .025f * Time.deltaTime);
             colorGrading.saturation.value = Mathf.Lerp(colorGrading.saturation.value, -50, .025f * Time.deltaTime);
-            depth.focusDistance.value = Mathf.Lerp(depth.focusDistance.value, 1, .025f * Time.deltaTime);
+            depth.focusDistance.value = Mathf.Lerp(depth.focusDistance.value, 3, .015f * Time.deltaTime);
             vignette.intensity.value = Mathf.Lerp(vignette.intensity.value, 0, .025f * Time.deltaTime);
             chromatic.intensity.value = Mathf.Lerp(chromatic.intensity.value, 0, .025f * Time.deltaTime);
         }
