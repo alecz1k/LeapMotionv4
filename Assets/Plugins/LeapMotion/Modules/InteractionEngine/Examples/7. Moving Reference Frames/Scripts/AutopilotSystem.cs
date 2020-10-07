@@ -24,12 +24,12 @@ namespace Leap.Unity.Examples {
     public float currentSpeed { get { return _currentSpeed; } }
 
     public void IncreaseSpeed() {
-      _targetSpeed += 5F;
+      _targetSpeed += 2F;
     }
 
     public void DecreaseSpeed()
      {
-      _targetSpeed -= 5F;
+      _targetSpeed -= 2F;
      }
 
      public void IncreaseTorque() 
